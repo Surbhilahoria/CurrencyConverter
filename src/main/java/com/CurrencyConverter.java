@@ -20,7 +20,7 @@ public class CurrencyConverter {
         System.out.println("Enter the amount you wish to convert:");
         BigDecimal amount = scanner.nextBigDecimal();
     
-        String urlString = "https://v6.exchangerate-api.com/v6/a7e178c91043941fa1910b19/latest/" + baseCurrency.toUpperCase();
+        String urlString = "https://v6.exchangerate-api.com/v6/YOUR-API-KEY/latest/" + baseCurrency.toUpperCase();
     
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
